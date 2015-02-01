@@ -8,3 +8,5 @@ ramrod from the ramdisk; much nicer than the old one!) and execs `sshd -D`.
 Stick the binary in /etc/rc.d (make sure it's alphabetically first), then you
 can hold volume down on boot to go straight from the jailbreak executable to
 SSH over USB.  Run `killall sshd` to continue boot.
+
+Public domain.
