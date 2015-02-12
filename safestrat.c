@@ -92,9 +92,12 @@ int main(int argc, char **argv) {
     if (!(force || test_volume_down()))
         return 0;
     enable_usb();
-    execl("/usr/sbin/sshd", "/usr/sbin/sshd", "-D", NULL);
-    printf("exec fail :(\n");
-    return 1;
+    //execl("/usr/sbin/sshd", "/usr/sbin/sshd", "-D", NULL);
+    kill(14, SIGSTOP);
+    system("/usr/sbin/sshd -D");
+    kill(14, SIGCONT);
+    printf("up and running!\n");
+    return 0;
 usage:
     printf("usage: safestrat [force]\n");
     return 1;
