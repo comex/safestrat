@@ -93,9 +93,11 @@ int main(int argc, char **argv) {
         return 0;
     enable_usb();
     //execl("/usr/sbin/sshd", "/usr/sbin/sshd", "-D", NULL);
-    kill(14, SIGSTOP);
+    if (kCFCoreFoundationVersionNumber > 847.22 && kCFCoreFoundationVersionNumber < 1140.0)
+        kill(14, SIGSTOP);
     system("/usr/sbin/sshd -D");
-    kill(14, SIGCONT);
+    if (kCFCoreFoundationVersionNumber > 847.22 && kCFCoreFoundationVersionNumber < 1140.0)
+        kill(14, SIGCONT);
     printf("up and running!\n");
     return 0;
 usage:
