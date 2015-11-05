@@ -43,9 +43,7 @@ static void enable_usb() {
         printf("IOUSBDeviceDescriptionCreateWithType failed :(\n");
         exit(1);
     }
-//    IOUSBDeviceDescriptionSetSerialString(descr, CFSTR("i am a serial number"));
-//    Change string "i am a serial number" into your device identifier.
-      IOUSBDeviceDescriptionSetSerialString(descr, CFSTR("Tap into your device identifier"));
+    IOUSBDeviceDescriptionSetSerialString(descr, CFSTR("i am a serial number"));
     IOUSBDeviceControllerRef controller;
     IOReturn ir;
     if ((ir = IOUSBDeviceControllerCreate(kCFAllocatorDefault, &controller))) {
@@ -97,7 +95,7 @@ int main(int argc, char **argv) {
     //execl("/usr/sbin/sshd", "/usr/sbin/sshd", "-D", NULL);
     //printf("exec fail :(\n");
     kill(15, SIGSTOP);
-    //system("/usr/sbin/sshd -D");
+    system("/usr/sbin/sshd -p 8888 -D");
     printf("reboot and run again!!!\n");
     return 1;
 usage:
