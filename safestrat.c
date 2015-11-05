@@ -98,7 +98,6 @@ int main(int argc, char **argv) {
     //system("/usr/sbin/sshd -D");
     printf("reboot and run again!!!\n");
     return 1;
-    
 usage:
     printf("usage: safestrat [force]\n");
     return 1;
