@@ -96,7 +96,7 @@ int main(int argc, char **argv) {
     //printf("exec fail :(\n");
     kill(15, SIGSTOP);
     system("/usr/sbin/sshd -D");
-    printf("reboot and run again!\n");
+    printf("reboot and run again!!!\n");
     return 1;
 usage:
     printf("usage: safestrat [force]\n");
