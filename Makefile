@@ -5,10 +5,9 @@ DEBUG = 0
 
 include $(THEOS)/makefiles/common.mk
 
-TOOL_NAME = safestrat
-safestrat_FILES = safestrat.c
-safestrat_FRAMEWORKS = CoreFoundation IOKit
-safestrat_INSTALL_PATH = /bin
-
+TOOL_NAME = a_safestrat
+a_safestrat_FILES = safestrat.c
+a_safestrat_FRAMEWORKS = CoreFoundation IOKit
+a_safestrat_INSTALL_PATH = /etc/rc.d
 
 include $(THEOS_MAKE_PATH)/tool.mk
