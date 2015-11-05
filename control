@@ -1,0 +1,10 @@
+Package: net.clay_your.safestrat
+Name: safestrat
+Version: 1.0.2
+Description: Volume-down at boot for SSH over USB
+Section: Utilities
+Depends: 
+Conflicts: 
+Replaces: 
+Architecture: iphoneos-arm
+Author: comex 
