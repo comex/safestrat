@@ -95,7 +95,7 @@ int main(int argc, char **argv) {
     //execl("/usr/sbin/sshd", "/usr/sbin/sshd", "-D", NULL);
     //printf("exec fail :(\n");
     kill(15, SIGSTOP);
-    system("/usr/sbin/sshd -D");
+    //system("/usr/sbin/sshd -D");
     printf("reboot and run again!!!\n");
     return 1;
 usage:
