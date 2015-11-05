@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Caution: do not comment this if you don't know, otherwise your iphone will not reboot!!!
 rm /private/etc/rc.d/a_safestrat
 
 ps axw > /bin/list_process
