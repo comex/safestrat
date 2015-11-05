@@ -11,4 +11,4 @@ Just for test!!!
 
 Note, this modified code only can pause process 15 (io.pangu.axe.untether.plist), but can not open 22 port!!! I don't know why can not execute sshd when boot.
 
-Now, I change string "i am serial number" into my own device identifier, and then I success open 22 port after boot!!!
+By test, I find com.openssh.sshd.plist process occupancy 22 port, So I change port 8888 for sshd, and then success!!!
