@@ -13,4 +13,4 @@ Note, this modified code only can pause process 15 (io.pangu.axe.untether.plist)
 
 By test, I find com.openssh.sshd.plist process occupancy 22 port, So I change port 8888 for sshd, and then success!!! Run kill -CONT 15 to continue boot.
 
-In order to fix connection with itunes after continue boot, you need change string "i am a serial number" in the safestrat.c file(line 46) into your device identifier.
+In order to fix connection with itunes after continue boot, you need change string "i am a serial number" in the safestrat.c file(line 46) into your own device identifier.
